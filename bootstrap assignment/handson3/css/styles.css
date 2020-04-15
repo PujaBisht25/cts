@@ -1,0 +1,10 @@
+
+.material-icons{
+	vertical-align:middle;
+}
+#fav{
+	color: grey;
+}
+#fav:hover{
+	color: red;
+}
