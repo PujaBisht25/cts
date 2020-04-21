@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Movie Item</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"
+	type="text/javascript"></script>
+
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css"
+	rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"
+	type="text/javascript"></script>
+
+<link href="../css/style.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md  navbar-dark">
+		<a class="navbar-brand" href="#"> <i class="material-icons md-48">theaters</i>
+			MovieBooking
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link"
+					href="movie-item-list-admin.html">Movies </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- edit form -->
+	<div class="container myform">
+
+		<h1 class="display-4 edithead">Edit Movie</h1>
+		<form class="needs-validation" novalidate action="edit_movie-item_success.html">
+			<div class="form-group">
+				<label for="menuitem"> Movie Name</label> <input type="text"
+					class="form-control" id="menuitem"  required>
+				<div class="invalid-feedback">Movie name is required.</div>
+				
+			</div>
+
+			<div class="form-row">
+
+
+				<div class="form-group col-md-3">
+					<label for="price">Price</label> <input type="number"
+						class="form-control" id="price" required>
+				
+				<div class="invalid-feedback">Price is required.</div>
+				
+					
+				</div>
+				<div class="form-group col-md-3">
+					<label for="dateoflaunch">Date of Launch</label> <input type="text"
+						class="form-control" id="dateoflaunch" required>
+								<script src="../script/script.js"></script>
+				</div>
+				
+		
+				<div class="invalid-feedback">Date of Launch is required.</div>
+
+				<div class="form-group col-md-3">
+					<label for="category">Genre</label> <select id="category"
+						class="form-control" required>
+						<option></option>
+						<option>Action</option>
+						<option>Romance</option>
+						<option>Superhero</option>
+						<option>Adventure</option>
+						<option>Science Fiction</option>
+						<option>Comedy</option>
+					</select>
+					<div class="invalid-feedback">One genre is required.</div>
+				</div>
+
+				<div class="form-group col-md-3">
+					<div class="form-check">
+
+						<label class="form-check-label"> Active </label><br> <input
+							type="radio" name="optradio" checked>Yes <input type="radio"
+							name="optradio">No
+							
+					</div>
+					
+				</div>
+
+				<div class="form-group">
+					<div class="checkbox">
+						<label><input type="checkbox"  > Free
+							Drinks or Pizza</label>
+							
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-success"
+					>Save</button>
+			</div>
+		</form>
+	</div>
+	
+<script src="../script/validation.js"></script>
+	
+
+
+
+	<!-- Footer -->
+	<div class="container-fluid page-footer myfooter text-center">
+		<h5>© 2019 Copyright</h5>
+	</div>
+</body>
+</html>

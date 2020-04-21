@@ -1,0 +1,132 @@
+.navbar {
+	margin-bottom: 0;
+	background-color: red;
+	z-index: 9999;
+	border: 0;
+	font-size: 12px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #f4511e !important;
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+	.col-sm-4 {
+		text-align: center;
+		margin: 25px 0;
+	}
+}
+
+.jumbotron {
+	background:
+		url("https://images.unsplash.com/photo-1574267432644-f410f8ec2474?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80");
+	background-size: 100%;
+	height: auto;
+}
+
+.display-4 {
+	color: white;
+}
+
+.myfooter {
+	background-color: purple;
+	color: white;
+	position: relative;
+	top: 20px;
+	bottom: 10px;
+}
+
+.card-footer {
+	background-color: white;
+	border: none;
+}
+
+.card-title {
+	float: left;
+	font-size: 20px;
+	color: grey;
+}
+
+.myright {
+	float: right;
+}
+
+.myleft {
+	float: left;
+}
+
+.footerbutton {
+	float: right;
+	text-align: center;
+	width: 40%;
+}
+
+.shipping {
+	color: purple;
+}
+
+.dateoflaunch {
+	color: grey;
+}
+
+.myform {
+	top: 40px;
+	position: relative;
+	margin-bottom: 345px;
+}
+
+.edithead {
+	color: brown;
+}
+
+.mynotification {
+	background-color: #b9dfba;
+	color: #306932;
+	height: 20%;
+	top: 30px;
+	position: relative;
+	margin-bottom: 490px;
+}
+
+.itemstatus {
+	background-color: #b9dfba;
+	color: #306932;
+}
+
+.carddelete {
+	color: grey;
+}
+
+.mycart {
+	position: relative;
+	margin-bottom: 270px;
+}
+
+.mynotificationcart {
+	background-color:#ffe6e6;
+	color: #800000;
+	height: 20%;
+	top: 30px;
+	position: relative;
+	margin-bottom: 490px;
+}
+
+.validation
+{
+	top: 40px;
+	position: relative;
+	margin-bottom: 240px;
+}

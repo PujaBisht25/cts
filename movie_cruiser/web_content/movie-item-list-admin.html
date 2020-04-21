@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Movie Item List Admin</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+<link href="../css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md  navbar-dark">
+		<a class="navbar-brand" href="#"> <i class="material-icons md-48">theaters</i>
+			MovieBooking
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link"
+					href="movie-item-list-admin.html">Movies </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--  Jumbotron Part -->
+
+	<div class="jumbotron">
+		<h1 class="display-4">Find Movie</h1>
+		<form>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text"><i
+						class="material-icons md-48">movie</i></span>
+				</div>
+				<input type="text" class="form-control"
+					placeholder="Search your favourite movie" id="myinput"
+					onkeyup="searchFunction()">
+			</div>
+		</form>
+	</div>
+
+	<!--  Adding food items -->
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="card m-2">
+				<img class="card-img-top"
+					src="https://wallpapercave.com/wp/wp4907889.jpg"
+					alt="Card image cap" height="300" width="400">
+				<div class="card-body">
+
+					<div class="card-title">Ironman 3</div>
+					<div class="myright text-danger">&#8377;500</div>
+
+				</div>
+				<div class="card-body">
+					<div class="myleft">
+						<span class="badge badge-success">Active</span>Action
+					</div>
+					<div class="myright">
+						<i class="material-icons md-36 shipping">local_pizza</i> <span
+							class="badge badge-pill badge-info">free</span>
+					</div>
+
+				</div>
+
+				<div class="card-footer">
+
+					<div class="myleft dateoflaunch">
+						<i class="material-icons md-18">query_builder</i> Launch <br>
+						15/03/2017
+					</div>
+
+					<button type="button" class="btn btn-danger footerbutton"
+						onClick="location.href='edit-movie-item.html'">
+						<i class="material-icons ">create</i>Edit
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-sm-3">
+			<div class="card m-2">
+				<img class="card-img-top"
+					src="https://wallpapercave.com/wp/wp2162922.jpg"
+					alt="Card image cap" height="300" width="400">
+				<div class="card-body">
+
+					<div class="card-title">Dracula Untold</div>
+					<div class="myright text-danger">&#8377;300</div>
+
+				</div>
+				<div class="card-body">
+					<div class="myleft">
+						<span class="badge badge-success">Active</span> Romance
+					</div>
+
+				</div>
+
+				<div class="card-footer">
+
+					<div class="myleft dateoflaunch">
+						<i class="material-icons md-18">query_builder</i> Launch <br>
+						23/12/2017
+					</div>
+
+					<button type="button" class="btn btn-danger footerbutton"
+						onClick="location.href='edit-movie-item.html'">
+						<i class="material-icons ">create</i>Edit
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-sm-3">
+			<div class="card m-2">
+				<img class="card-img-top"
+					src="https://wallpapercave.com/wp/wp5174490.jpg"
+					alt="Card image cap" height="300" width="400">
+				<div class="card-body">
+
+					<div class="card-title">Wolverine</div>
+					<div class="myright text-danger">&#8377;700</div>
+
+				</div>
+				<div class="card-body">
+					<div class="myleft">
+						<span class="badge badge-success">Active</span> Action
+					</div>
+
+				</div>
+
+				<div class="card-footer">
+
+					<div class="myleft dateoflaunch">
+						<i class="material-icons md-18">query_builder</i> Launch <br>
+						21/08/2017
+					</div>
+
+					<button type="button" class="btn btn-danger footerbutton"
+						onClick="location.href='edit-movie-item.html'">
+						<i class="material-icons ">create</i>Edit
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="card m-2">
+				<img class="card-img-top"
+					src="https://wallpapercave.com/wp/wc1675651.jpg"
+					alt="Card image cap" height="300" width="400">
+				<div class="card-body">
+
+					<div class="card-title">B vs S</div>
+					<div class="myright text-danger">&#8377;300</div>
+
+				</div>
+				<div class="card-body">
+					<div class="myleft">
+						<span class="badge badge-danger">Inactive</span> Superhero
+					</div>
+					<div class="myright">
+						<i class="material-icons md-36 shipping">local_drink</i> <span
+							class="badge badge-pill badge-info">free</span>
+					</div>
+
+				</div>
+
+				<div class="card-footer">
+
+					<div class="myleft dateoflaunch">
+						<i class="material-icons md-18">query_builder</i> Launch <br>
+						02/07/2017
+					</div>
+
+					<button type="button" class="btn btn-danger footerbutton"
+						onClick="location.href='edit-movie-item.html'">
+						<i class="material-icons ">create</i>Edit
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="card m-2">
+				<img class="card-img-top"
+					src="https://wallpapercave.com/wp/wp2162772.jpg"
+					alt="Card image cap" height="300" width="400">
+				<div class="card-body">
+
+					<div class="card-title">300 BC</div>
+					<div class="myright text-danger">&#8377;400</div>
+
+				</div>
+				<div class="card-body">
+
+					<div class="myleft">
+						<span class="badge badge-success">Active</span> Adventure
+					</div>
+					<div class="myright">
+						<i class="material-icons md-36 shipping">local_pizza</i> <span
+							class="badge badge-pill badge-info">free</span>
+					</div>
+
+				</div>
+
+				<div class="card-footer">
+
+					<div class="myleft dateoflaunch">
+						<i class="material-icons md-18">query_builder</i> Launch <br>
+						11/01/2022
+					</div>
+
+					<button type="button" class="btn btn-danger footerbutton"
+						onClick="location.href='edit-movie-item.html'">
+						<i class="material-icons ">create</i>Edit
+					</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="../script/search.js"></script>
+
+
+	<!-- Footer -->
+	<div class="page-footer myfooter text-center">
+		<h5>� 2019 Copyright</h5>
+	</div>
+</body>
+</html>
