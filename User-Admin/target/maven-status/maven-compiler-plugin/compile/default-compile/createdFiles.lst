@@ -1,0 +1,12 @@
+com\cognizant\Repository\ProductRepository.class
+com\cognizant\Repository\UserRepository.class
+com\cognizant\entity\CustomUserDetails.class
+com\cognizant\entity\Product.class
+com\cognizant\config\AuthorizationServerConfig.class
+com\cognizant\controller\ProductController.class
+com\cognizant\config\SecurityConfiguration.class
+com\cognizant\service\ProductService.class
+com\cognizant\config\ResourceServerConfig.class
+com\cognizant\UserAdminApplication.class
+com\cognizant\service\CustomUserDetailsService.class
+com\cognizant\entity\User.class

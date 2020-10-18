@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+User-Admin,com.cognizant.entity,CustomUserDetails,66,0,2,0,17,0,11,0,10,0
+User-Admin,com.cognizant.entity,Product,25,21,0,0,11,9,7,3,7,3
+User-Admin,com.cognizant.entity,User,38,0,0,0,16,0,11,0,11,0
+User-Admin,com.cognizant.config,AuthorizationServerConfig,0,90,0,0,0,20,0,7,0,7
+User-Admin,com.cognizant.config,SecurityConfiguration,0,6,0,0,0,2,0,2,0,2
+User-Admin,com.cognizant.config,ResourceServerConfig,0,25,0,0,0,5,0,2,0,2
+User-Admin,com.cognizant,UserAdminApplication,5,3,0,0,2,1,1,1,1,1
+User-Admin,com.cognizant.controller,ProductController,34,3,0,0,8,1,7,1,7,1
+User-Admin,com.cognizant.service,ProductService,42,26,0,0,7,7,3,5,3,5
+User-Admin,com.cognizant.service,CustomUserDetailsService,10,3,0,0,2,1,1,1,1,1
